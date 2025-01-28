@@ -1,5 +1,5 @@
 1 $  cat datos.txt | grep -i 'Juan'
-2
+2 $ cat datos.txt| grep -i 'juan' |awk -F ',+' '{print $4}'
 3
 4
 5
