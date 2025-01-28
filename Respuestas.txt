@@ -1,6 +1,6 @@
 1 $  cat datos.txt | grep -i 'Juan'
 2 $ cat datos.txt| grep -i 'juan' |awk -F ',+' '{print $4}'
-3
+3$  grep -i 'prog*' datos.txt| wc -l
 4
 5
 6
