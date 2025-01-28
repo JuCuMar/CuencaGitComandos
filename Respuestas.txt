@@ -1,9 +1,9 @@
 1 $  cat datos.txt | grep -i 'Juan'
 2 $ cat datos.txt| grep -i 'juan' |awk -F ',+' '{print $4}'
 3$  grep -i 'prog*' datos.txt| wc -l
-4
-5
+4$  grep -i 'prog$' datos.txt| wc -l
+5 $ cut -d',' -f4 | grep ".es" datos.txt
 6$ sed -i 's/.com/.net/g' datos.txt
-7
+7$  grep -i '-' datos.txt| wc -l
 8$ cat datos.txt | awk -F, '$3 > 40 {print $2 "***" $3}' | sort
 9$ cat datos.txt | awk -F, '$2 > $0 {print $2 "***" $5}' | sort 
